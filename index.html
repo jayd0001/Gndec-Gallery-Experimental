@@ -1,7 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  
+  <style>
 div.gallery {
   border: 1px solid #ccc;
 }
@@ -42,12 +50,8 @@ div.desc {
     width: 100%;
   }
 }
-  
-  @media only screen and (min-width: 300px) {
-  .responsive {
-    width: 100%;
-  }
-}
+    
+
 
 .clearfix:after {
   content: "";
@@ -55,12 +59,23 @@ div.desc {
   clear: both;
 }
 </style>
+
 </head>
 <body>
 
-<h2>Gndec Image Gallery Experimental (Underprogress)</h2>
 
-<h4>Resize the browser window to see the effect.</h4>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h2>Gndec Image Gallery Experimental (Underprogress)</h2>     
+    <p>Live Gallery Experimental preview</p>
+  </div>
+</div>
+  
+<div class="container-fluid bg-3 text-center">    
+ 
+
+
 
 <div class="responsive">
   <div class="gallery">
@@ -103,8 +118,13 @@ div.desc {
 
 <div style="padding:6px;">
   <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
-  <p>Responsive Gndec Gallery experimental page by <b>Jay D</b></p>
+ 
 </div>
+</div><br><br>
+
+<footer class="container-fluid text-center">
+  <p> <p>Responsive Gndec Gallery experimental page by <b>Jay D</b></p>
+</footer>
 
 </body>
 </html>
